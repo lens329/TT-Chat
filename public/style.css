@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 800px;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+a {
+    color: #58a6ff;
+}
+
+.head {
+    margin-bottom: 15px;
+}
+
+.subTitle {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.usernamelink {
+    color: #18508f;
+    text-decoration: none;
+}
+
+#roomUserText {
+    width: 100%;
+    text-align: right;
+}
+
+#roomStats {
+    width: 100%;
+    text-align: right;
+}
+
+#roomStats b {
+    margin-right: 20px;
+}
+
+.splitchattable,
+.splitstatetable {
+    width: 100%;
+}
+
+.splitstatetable td {
+    width: 50%;
+}
+
+.containerheader {
+    text-align: center;
+}
+
+.chatcontainer,
+.giftcontainer,
+.eventcontainer {
+    overflow-y: scroll;
+    height: calc(100vh - 240px);
+    word-wrap: break-word;
+}
+
+.eventcontainer {
+    height: calc(100vh - 90px);
+}
+
+.chatcontainer {
+    min-width: 400px;
+    max-width: calc(100vw - 430px);
+}
+
+.giftcontainer {
+    min-width: 400px;
+}
+
+.miniprofilepicture {
+    height: 20px;
+    width: 20px;
+}
+
+.gifticon {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* Add these to your existing style.css */
+.joincontainer {
+    height: calc(100vh - 460px);
+    /* Dynamic height calculation */
+    overflow-y: auto;
+    border: 1px solid #444;
+    /* Darker border to match theme */
+    padding: 10px;
+    background-color: rgb(221, 219, 228);
+    color: rgb(54, 92, 204);
+    font-size: 1em;
+    /* Slightly smaller than gifts */
+    margin-top: 15px;
+    border-radius: 4px;
+    /* Matching your rounded style */
+}
+
+.join-message {
+    padding: 6px 0;
+    border-bottom: 1px solid #f9f4f4;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+}
+
+.tiny-pfp {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 8px;
+    object-fit: cover;
+}
+
+/* Adjust gift container height to accommodate join container */
+.giftcontainer {
+    height: calc(60vh - 120px);
+    /* Reduced height */
+    min-width: 400px;
+}
+
+/* Table and cell structure */
+.splitchattable {
+    width: 100%;
+    table-layout: fixed;
+    /* Crucial for equal width distribution */
+    border-collapse: separate;
+    border-spacing: 5px;
+    /* Small gap between columns */
+}
+
+.chat-td {
+    width: 60%;
+    /* Allocate more space to chat */
+    vertical-align: top;
+}
+
+.modcontainer {
+    height: 150px;
+    /* Smaller than other containers */
+    overflow-y: auto;
+    border: 1px solid #ff5555;
+    /* Red border for emphasis */
+    background-color: rgba(255, 50, 50, 0.1);
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.mod-message {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ffcccc;
+}
+
+.mod-message img {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
